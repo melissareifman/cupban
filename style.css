@@ -42,12 +42,17 @@ html, body {
 }
 
 .logo {
-  width: 70%;
+  display: block;          /* remove inline gaps */
   max-width: 300px;
-  height: auto;
+  width: 70%;
+  height: auto;            /* keep aspect ratio */
+  object-fit: contain;     /* make extra sure */
+  flex-shrink: 0;          /* prevent flexbox from squishing it */
+  align-self: center;      /* prevent stretch in flex parent */
   filter: invert(1);
   margin-bottom: 20px;
 }
+
 
 .blurb {
   font-weight: 200;
@@ -185,6 +190,9 @@ html, body {
     width: 50%;
     max-width: 200px;
     height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    align-self: center;
   }
 
   .blurb {
