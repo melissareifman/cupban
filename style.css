@@ -44,6 +44,7 @@ html, body {
 .logo {
   width: 70%;
   max-width: 300px;
+  height: auto;
   filter: invert(1);
   margin-bottom: 20px;
 }
@@ -183,6 +184,7 @@ html, body {
   .logo {
     width: 50%;
     max-width: 200px;
+    height: auto;
   }
 
   .blurb {
