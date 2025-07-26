@@ -30,32 +30,32 @@
     <form id="signupForm" class="signup-form">
       <div class="form-row">
         <div class="form-field">
-          <label for="firstName">First Name</label>
+          <label for="firstName">First Name*</label>
           <input type="text" id="firstName" name="first_name" required />
         </div>
         <div class="form-field">
-          <label for="lastName">Last Name</label>
+          <label for="lastName">Last Name*</label>
           <input type="text" id="lastName" name="last_name" required />
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-field full-width">
-          <label for="email">Email</label>
+          <label for="email">Email*</label>
           <input type="email" id="email" name="email" required />
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-field full-width">
-          <label for="grad">Graduation Year</label>
-          <input type="grad" id="grad" name="grad_year" required />
+          <label for="grad">Graduation Year*</label>
+          <input type="number" id="grad" name="grad_year" required />
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-field full-width">
-          <label for="roles">CUPB Role(s) Held</label>
+          <label for="roles">CUPB Role(s) Held*</label>
           <select id="roles" name="roles" multiple required>
             <option value="exec">Executive Chairperson</option>
             <option value="selections">Selections Chairperson</option>
@@ -64,33 +64,39 @@
             <option value="admin">Administrative Chairperson</option>
             <option value="hospo">Hospitality Chairperson</option>
             <option value="gbody">G-Body Member</option>
+            <option value="other">Other</option>
           </select>
           <small class="hint">Hold ⌘ (Mac) or Ctrl (Windows) to select multiple</small>
+          <input type="text" id="otherRole" name="other_role" placeholder="Please specify your role(s)" style="display:none; margin-top:10px;" />
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-field full-width">
           <label for="linkedin">LinkedIn Profile</label>
-          <input type="linkedin" id="linkedin" name="linkedin" required />
+          <input type="url" id="linkedin" name="linkedin" />
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-field full-width">
           <label for="favShow">Favorite Show You Worked</label>
-          <input type="favShow" id="favShow" name="fav_show" required />
+          <input type="text" id="favShow" name="fav_show" />
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-field full-width">
           <label for="question">Any Questions/Comments?</label>
-          <input type="question" id="question" name="questions" required />
+          <input type="text" id="question" name="questions" />
         </div>
       </div>
 
       <button type="submit" class="primary-btn">Submit</button>
+      <div class="disclaimer-wrapper">
+        <small class="disclaimer">© 2025 CUPB Alumni Network</small>
+        <small class="disclaimer">Terms and Conditions | Privacy Policy</small>
+      </div>
     </form>
     </div>
   </div>
