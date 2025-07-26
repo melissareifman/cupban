@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join CUPBAN</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<section class="split-layout">
+  <!-- Left Panel -->
+  <div class="left-panel">
+    <div>
+    <img src="logo1.png" alt="Logo" class="logo" />
+    <p class="blurb">
+      We are so excited to announce the upcoming launch of the Cornell University Program Board Alumni Network!
+    </p>
+    <p class="blurb">
+      If you loved being a part of CUPB and would like to stay up to date as we kick off, please sign up here.
+    </p>
+    </div>
+  </div>
+
+  <!-- Right Panel -->
+  <div class="right-panel">
+    <div class="form-wrapper">
+    <h2 class="form-heading">Sign Up</h2>
+    <form id="signupForm" class="signup-form">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="first_name" required />
+        </div>
+        <div class="form-field">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="last_name" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label for="grad">Graduation Year</label>
+          <input type="grad" id="grad" name="grad_year" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label for="roles">CUPB Role(s) Held</label>
+          <select id="roles" name="roles" multiple required>
+            <option value="exec">Executive Chairperson</option>
+            <option value="selections">Selections Chairperson</option>
+            <option value="prodo">Production Chairperson</option>
+            <option value="promo">Promotions Chairperson</option>
+            <option value="admin">Administrative Chairperson</option>
+            <option value="hospo">Hospitality Chairperson</option>
+            <option value="gbody">G-Body Member</option>
+          </select>
+          <small class="hint">Hold ⌘ (Mac) or Ctrl (Windows) to select multiple</small>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label for="linkedin">LinkedIn Profile</label>
+          <input type="linkedin" id="linkedin" name="linkedin" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label for="favShow">Favorite Show You Worked</label>
+          <input type="favShow" id="favShow" name="fav_show" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label for="question">Any Questions/Comments?</label>
+          <input type="question" id="question" name="questions" required />
+        </div>
+      </div>
+
+      <button type="submit" class="primary-btn">Submit</button>
+    </form>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
